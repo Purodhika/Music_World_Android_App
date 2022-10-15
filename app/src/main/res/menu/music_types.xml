@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/menu_rock"
+    android:title="Rock Music" />
+
+    <item
+        android:id="@+id/menu_pop"
+        android:title="Pop Music" />
+
+    <item
+        android:id="@+id/menu_jazz"
+        android:title="Jazz Music" />
+
+    <item
+        android:id="@+id/menu_indie"
+        android:title="Indie Music" />
+
+    <item
+        android:id="@+id/menu_hiphop"
+        android:title="Hip-Hop Music" />
+
+</menu>

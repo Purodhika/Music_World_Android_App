@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectedGenre">
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Displaying Selected Songs"
+        android:textAlignment="center"
+
+        />
+    <RadioGroup
+        android:id="@+id/rdBtnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="450dp" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text=""
+        android:textSize="15dp"
+
+        android:textAlignment="center"
+
+        />
+
+    <Button
+        android:id="@+id/payment_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:onClick="Proceed_Payment"
+        android:text="Proceed To Pay" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="220dp"
+        android:layout_marginTop="-72dp"
+
+        android:onClick="onClickDelete"
+        android:text="Delete" />
+
+</LinearLayout>

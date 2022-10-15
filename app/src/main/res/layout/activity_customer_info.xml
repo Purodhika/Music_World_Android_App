@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerInfo">
+
+    <TextView
+        android:id="@+id/paymentPageText"
+        android:layout_width="397dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:text="@string/fill_your_details_to_purchase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/paymentField"
+        android:layout_width="397dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Enter Full Name"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/paymentField"
+        app:layout_constraintStart_toStartOf="parent" />
+    <requestFocus/>
+
+
+
+    <EditText
+        android:id="@+id/cardNumber"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Enter Credit/Debit Card Number"
+        android:inputType="number"
+        android:maxLength="16"
+        app:layout_constraintTop_toBottomOf="@+id/fullName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/cardExpiry"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Enter Credit/Debit Card Expiry Date"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/cardCvv"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Enter CVV"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintTop_toBottomOf="@+id/cardExpiry"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/securityQuestion"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Favorite Artist"
+        android:inputType="text"
+
+        app:layout_constraintTop_toBottomOf="@+id/cardCvv"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="28dp"
+        android:onClick="onClickPlaceOrder"
+        android:text="Place Order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/securityQuestion" />
+</androidx.constraintlayout.widget.ConstraintLayout>
